@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parcel locker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="step__first">
+        <h1 class="step__first__title">Envelo</h1>
+        <p class="step__first__content">
+            Możesz mieć swoją przesyłkę w kilkanaście sekund. <br>
+            Rozpocznij klikając w przycisk.
+        </p>
+        <div id="second__ad" class="step__second__advanced">
+            <h2>Paczka odebrana!</h2>
+            <p>Zrobiłeś to w czasie 10 sekund! Czy <br>
+                możemy zrobić dla Ciebie coś jeszcze?
+            </p>
+            <div class="btn__container">
+                <button id="btn__done" class="step__second__submit">To wszystko na <br> dziś</button>
+                <button id="btn__repeat" class="step__second__submit">Odbierz kolejną <br> paczkę</button>
+            </div>
+        </div>
+
+        <form id="form" class="step__first__form" action="/" method="GET">
+            <div class="form__input">
+                <div id="number__form" class="form__phone">
+                    <label for="number">Numer telefonu</label>
+                    <input type="text" id="number" name="number"
+                           minlength="9" maxlength="9" size="9">
+                    <div id="error__phone"></div>
+                </div>
+
+                <div id="code__form" class="form__code">
+                    <label for="code">Kod odbioru</label>
+                    <input type="text" id="code" name="code"
+                           minlength="4" maxlength="4" size="4">
+                    <div id="error__code"></div>
+                </div>
+            </div>
+
+            <input id="btn__pickup" class="step__zero__submit" type="button" value="Odbierz paczkę" disabled>
+        </form>
+
+    </div>
+
+    <div class="margin"></div>
+
+    <div class="step__second__simple">
+        <h1 class="step__second__title">Envelo</h1>
+        <p class="step__second__content">
+            Możesz mieć swoją przesyłkę w kilkanaście sekund. <br>
+            Rozpocznij klikając w przycisk.
+        </p>
+        <h2>Paczka odebrana!</h2>
+        <p>Zrobiłeś to w czasie 10 sekund! Czy <br>
+            możemy zrobić dla Ciebie coś jeszcze?
+        </p>
+        <div class="btn__container">
+            <button class="step__second__submit">To wszystko na <br> dziś</button>
+            <button class="step__second__submit">Odbierz kolejną <br> paczkę</button>
+        </div>
+    </div>
+
+    <div class="margin"></div>
+
+    <div class="step__zero">
+        <h1 class="step__zero__title">Envelo</h1>
+        <p class="step__zero__content">
+            Możesz mieć swoją przesyłkę w kilkanaście sekund. <br>
+            Rozpocznij klikając w przycisk.
+        </p>
+        <button class="step__zero__submit">Odbierz paczkę</button>
+    </div>
+
+    <div class="margin"></div>
+
+</body>
+<script defer src="parcellocker.js"></script>
+</html>
+
+

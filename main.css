@@ -1,0 +1,82 @@
+.margin {
+    margin: 10px;
+}
+
+.step__zero,
+.step__first,
+.step__second__simple,
+.step__second__advanced {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.step__zero__title,
+.step__first__title,
+.step__second__title {
+    color: red;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.step__zero__content,
+.step__first__content,
+.step__second__content {
+    text-align: center;
+    margin: 25px;
+}
+
+.step__zero__submit,
+.step__first__submit{
+    background-color: red;
+    padding:20px 40px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.step__first__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__phone,
+.form__code {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#number,
+#code {
+    text-align: left;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: row;
+}
+
+#error__code,
+#error__phone {
+    color: red;
+}
+
+.step__second__advanced {
+    border: 1px solid black;
+    width: 50%;
+    display: none;
+}
+
+.step__second__submit {
+    background-color: red;
+    color: black;
+}
+
