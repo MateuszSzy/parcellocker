@@ -11,6 +11,7 @@
 
         body {
             background-color: var(--bg-color);
+            /*Font property font-family does not have generic default*/
             font-family: Lato;
         }
 
@@ -25,12 +26,15 @@
     </style>
 </head>
 <body>
-    <h1 aria-main="true">Hall of fame</h1>
+<!--Attribute aria-main is not allowed here-->
+<h1 aria-main="true">Hall of fame</h1>
     <div class="hero">
         <h1>Hero count: {heroCount}</h1>
     </div>
+
+<!--Instance member is not accessible-->
     <button onclick="Hero.train()">Power Up Hero</button>
 
-    <script></script>
+    <script defer src="./heroes.js"></script>
 </body>
 </html>
